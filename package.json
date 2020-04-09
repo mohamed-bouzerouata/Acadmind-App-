@@ -1,20 +1,21 @@
 {
-  "name": "bouzba",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "master nodejs",
-  "main": "first-app.js",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node first-app.js" 
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohamed-bouzerouata/Acadmind-App-.git"
-  },
-  "author": "mohamed bouzerouata",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mohamed-bouzerouata/Acadmind-App-/issues"
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   },
-  "homepage": "https://github.com/mohamed-bouzerouata/Acadmind-App-#readme"
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  }
 }
